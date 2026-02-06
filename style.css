@@ -1,0 +1,707 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #243e63;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.logo-box {
+    background-color: #6415ff;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #243e63;
+    font-weight: 600;
+}
+
+.signup-btn {
+    background-color: #6415ff;
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: #6415ff;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #7c8ba1;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Input Group */
+.email-input-group {
+    display: flex;
+    border: 2px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 5px;
+    max-width: 450px;
+    margin-bottom: 3rem;
+}
+
+.email-input-group input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    flex: 1;
+    border-radius: 50px;
+}
+
+.cta-btn {
+    background-color: #6415ff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Customers */
+.trusted-customers p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #cbd5e0;
+    margin-bottom: 1rem;
+}
+
+.customer-logos {
+    display: flex;
+    gap: 20px;
+    opacity: 0.5;
+    font-weight: 800;
+}
+
+
+/* Container & Headers */
+.pricing-container {
+  padding: 80px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sub-heading {
+  color: #6415ff;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #6415ff;
+}
+
+/* Grid Layout */
+.pricing-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border-top: 8px solid transparent;
+  transition: transform 0.3s ease;
+}
+
+/* Highlighted Business Card */
+.business-card {
+  border-top: 8px solid #6415ff;
+  background: linear-gradient(135deg, #6415ff 0%, #7431ff 100%);
+  color: white;
+}
+
+.card-header .plan-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card-header .price {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+/* List Items */
+.card-body ul {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.card-body li {
+  margin-bottom: 15px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Buttons */
+.buy-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #6415ff;
+  color: white;
+}
+
+.business-card .buy-btn {
+  background-color: white;
+  color: #6415ff;
+}.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f3f0ff; /* Light purple background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f3f0ff; /* Light purple background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}.values-flex {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 100px 0;
+}
+
+.values-content { flex: 1; }
+.values-image { flex: 1; }
+
+.value-item {
+    display: flex;
+    margin-top: 30px;
+}
+
+.value-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.affordable { background-color: #e6fffa; color: #38b2ac; }
+.professional { background-color: #fff5f5; color: #f56565; }
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #6415ff;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+
+.testimonial-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stars {
+    color: #feb236;
+    font-size: 1.2rem;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.customer-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #cbd5e0;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.customer-name {
+    font-weight: 700;
+    color: #243e63;
+}
+
+.customer-title {
+    color: #7c8ba1;
+    font-size: 0.9rem;
+}
+
+
+
+.get-started {
+    padding: 100px 5%;
+}
+
+.cta-box {
+    background-color: #6415ff;
+    border-radius: 20px;
+    padding: 80px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.cta-text h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    max-width: 600px;
+}
+
+.highlight-white { color: #f7fafc; opacity: 0.8; }
+
+.cta-buttons { display: flex; gap: 20px; }
+
+.get-started-btn {
+    background-color: #f56565; /* Coral red from original */
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-us-btn {
+    border: 2px solid #a0aec0;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.footer {
+    background-color: #6415ff;
+    color: white;
+    padding: 80px 5%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-column h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.footer-column a {
+    display: block;
+    color: #e2e8f0;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.footer-column a:hover { text-decoration: underline; }
+
+
+
+@media (max-width: 768px) {
+    /* Stack horizontal elements into a single column */
+    .hero-section, .values-flex, .testimonial-flex, .cta-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-grid, .pricing-grid, .footer-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+
+
+
+
+/* --- Treact Brand Logo (Top Left) --- */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #243e63;
+    text-decoration: none;
+}
+
+.logo-box {
+    background-color: #6415ff; /* The specific Treact Purple/Blue */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Animated Nav Links (Top Right) --- */
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #243e63;
+    font-weight: 600;
+    margin: 0 20px;
+    padding-bottom: 4px;
+}
+
+/* The line that goes from left to right on hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6415ff;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* --- The Blue Buttons (Sign Up & Get Started) --- */
+.btn-blue {
+    background-color: #6415ff; /* Treact's primary blue-purple */
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: #5011d1;
+}
+
+/* --- Hero Email Input Wrapper --- */
+.email-input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e2e8f0; /* The thin line around the group */
+    border-radius: 50px;
+    padding: 6px;
+    max-width: 450px;
+    background: white;
+    margin-top: 40px;
+}
+
+.email-input-group input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    flex: 1;
+    font-size: 1rem;
+    color: #a0aec0; /* "Your E-mail Address" color */
+}
+
+/* Navigation Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #243e63;
+    text-decoration: none;
+}
+
+.logo-box {
+    background-color: #6415ff;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #243e63;
+    font-weight: 600;
+    margin: 0 20px;
+    padding-bottom: 4px;
+}
+
+/* The Sliding Line Animation */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6415ff;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn-blue {
+    background-color: #6415ff;
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+.email-input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e2e8f0; /* Thin gray line */
+    border-radius: 50px;
+    padding: 6px;
+    max-width: 450px;
+    background: white;
+    margin: 40px 0;
+}
+
+.email-input-group input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    flex: 1;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.email-input-group input::placeholder {
+    color: #a0aec0; /* Specific gray for "Your E-mail Address" */
+}
+
+
+/* Pricing Layout */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.price-card {
+    flex: 1;
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-top: 8px solid transparent;
+    
+    /* This creates the smooth fade effect */
+    transition: all 0.4s ease-in-out; 
+}
+
+/* Hover Effect: Card Fades In/Out */
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(100, 21, 255, 0.15);
+    border-top-color: #6415ff;
+}
+
+/* Featured (Business) Plan Styling */
+.price-card.featured {
+    background: linear-gradient(135deg, #6415ff 0%, #7431ff 100%);
+    color: white;
+    border-top: none;
+}
+
+.price-card.featured .plan-name, 
+.price-card.featured .duration {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button Styling inside cards */
+.btn-white {
+    background: white;
+    color: #6415ff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn-white:hover {
+    background: #f7fafc;
+}
+
+.illustration-img {
+    width: 100%;
+    max-width: 600px; /* Keeps the SVG from stretching too far */
+    height: auto;
+    display: block;
+}
+
+.values-flex {
+    display: flex;
+    align-items: center;
+    gap: 80px; /* Adds the space between the image and text seen in the original */
+    padding: 100px 0;
+}
