@@ -16,13 +16,3 @@ window.addEventListener('resize', () => {
 document.getElementById('menu-toggle').addEventListener('click', function () {
     document.getElementById('menu-list').classList.toggle('active');
 });
-
-document.querySelector('.hamburger').addEventListener('click', function() {
-  const isExpanded = this.getAttribute('aria-expanded') === 'true';
-  this.setAttribute('aria-expanded', !isExpanded);
-  document.querySelector('.nav-links').classList.toggle('active');
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Your toggle logic here
-});
