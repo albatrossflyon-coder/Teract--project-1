@@ -1,4 +1,4 @@
-/* ========================================
+* ========================================
    GENERAL STYLES & LAYOUT
    ======================================== */
 * {
@@ -45,6 +45,23 @@ img {
     text-decoration: none;
 }
 
+/* Constrain logo image size so it's not too large */
+.logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+/* header container layout */
+.site-header .header-container,
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+}
+
 .logo-box {
     background-color: #6415ff;
     color: white;
@@ -58,9 +75,10 @@ img {
 
 .nav-links {
     list-style: none;
-    display: flex;
     gap: 30px;
     align-items: center;
+    /* Mobile-first: hide links until hamburger is toggled */
+    display: none;
 }
 
 .nav-links a {
@@ -1027,6 +1045,11 @@ img {
         flex-direction: column;
         gap: 15px;
     }
+
+    /* Header adjustments on small screens */
+    .logo img { height: 38px; }
+    .logo-text { font-size: 18px; }
+    .header-container { padding: 12px 5%; }
 }
 
 /* Basic Navbar Styling */
@@ -1044,25 +1067,6 @@ img {
   color: #243E63;
 }
 
-/* Hide Checkbox */
-.menu-checkbox {
-  display: none;
-}
-
-/* Hamburger Icon Design */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #243E63;
-  transition: 0.3s;
-}
 
 /* Mobile Dropdown Menu */
 .nav-links {
@@ -1071,7 +1075,7 @@ img {
   right: 20px;
   background: white;
   width: 200px;
-  display: none; /* Hidden by default */
+    display: none; /* Hidden by default */
   flex-direction: column;
   box-shadow: 0 10px 15px rgba(0,0,0,0.1);
   border-radius: 8px;
@@ -1087,6 +1091,21 @@ img {
   text-decoration: none;
   color: #243E63;
   font-weight: 600;
+}
+
+/* Hamburger button - visible on mobile */
+.hamburger {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #243E63;
+}
+
+/* Show menu when toggled by JS */
+.nav-links.active {
+    display: flex;
 }
 
 /* The "Magic" - Show menu when checkbox is checked */
@@ -1107,4 +1126,91 @@ img {
     width: auto;
     gap: 20px;
   }
+}
+/* Header layout */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.logo img { height: 40px; display: block; }
+.logo-text { font-weight: 800; font-size: 20px; color:#16202a; }
+
+/* Nav & links */
+.main-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav .nav-links li { display: inline-flex; align-items:center; }
+
+/* Link text + animated underline */
+.main-nav .nav-links a {
+  position: relative;
+  display: inline-block;
+  padding: 6px 0;
+  color: #1f2937;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+.main-nav .nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg,#7c3aed,#6d28d9);
+  bottom: -6px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .18s ease;
+  border-radius: 2px;
+}
+.main-nav .nav-links a:hover,
+.main-nav .nav-links a:focus {
+  color: #0f172a;
+}
+.main-nav .nav-links a:hover::after,
+.main-nav .nav-links a:focus::after {
+  transform: scaleX(1);
+}
+
+/* Sign up button style (pill) */
+.signup-btn {
+  background: linear-gradient(90deg,#7c3aed,#6d28d9);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(109,40,217,0.16);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.signup-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(109,40,217,0.18); }
+
+/* Responsive: collapse spacing on small screens */
+@media (max-width: 720px) {
+  .header-container { padding: 12px 16px; }
+  .main-nav .nav-links { gap: 16px; }
+  .logo-text { font-size: 18px; }
 }
