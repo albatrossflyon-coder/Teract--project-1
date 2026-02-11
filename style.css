@@ -714,7 +714,10 @@ body.menu--open .menu {
     flex-direction: column;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    max-width: 300px;
+    margin: Ø auto;
 }
+
 
 .price-card:hover {
     transform: translateY(-5px);
@@ -1167,7 +1170,7 @@ body.menu--open .menu {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -1175,6 +1178,39 @@ body.menu--open .menu {
     .hero-content h1 {
         font-size: 2.2rem;
     }
+
+/* Mobile: stack testimonial footer so avatar/name sit above the arrows */
+.testimonials-section { flex-direction: column; }
+
+.testimonial-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+/* keep avatar + name grouped at the left */
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: center;
+}
+
+/* stack arrow buttons vertically and place them to the right */
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-self: center;
+}
+
+/* ensure circular buttons keep their size */
+.nav-button {
+  width: 44px;
+  height: 44px;
+}
+
 
     .features-grid {
         grid-template-columns: 1fr;
@@ -1193,8 +1229,8 @@ body.menu--open .menu {
     }
 
     .customer-info {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: flex-start;
+        align-items: center;
     }
 
     .nav-buttons {
@@ -1238,6 +1274,28 @@ body.menu--open .menu {
 
 
 
+
+/* Email input group - stack on mobile */
+.email-input-group {
+    flex-direction: column;
+    max-width: 100%;
+    border: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.email-input-group input {
+    border: 2px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 0;
+}
+
+.cta-btn {
+    width: auto;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
 
 
 
@@ -1297,3 +1355,16 @@ body.menu--open .menu {
   height: auto; /* Maintain aspect ratio */
 }
 
+/* Stack testimonial nav buttons on mobile */
+.nav-buttons {
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end; /* keep buttons aligned to the right */
+  margin-top: 12px;
+}
+
+/* keep button size consistent */
+.nav-button {
+  width: 44px;
+  height: 44px;
+}
