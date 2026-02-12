@@ -1,3 +1,4 @@
+
 /* ========================================
    GENERAL STYLES & LAYOUT
    ======================================== */
@@ -305,6 +306,10 @@ body.menu--open .menu {
 
 .hero-content {
     flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
 }
 
 .hero-content h1 {
@@ -1143,6 +1148,8 @@ body.menu--open .menu {
     .testimonials-section {
         flex-direction: column;
         gap: 40px;
+        width: 100%;
+        max-width: 600px;
     }
 
     .pricing-cards {
@@ -1278,10 +1285,12 @@ body.menu--open .menu {
 /* Email input group - stack on mobile */
 .email-input-group {
     flex-direction: column;
-    max-width: 100%;
     border: none;
     padding: 0;
     gap: 10px;
+    width: 100%;
+    max-width: 500px
+    margin 0 auto;
 }
 
 .email-input-group input {
@@ -1297,7 +1306,9 @@ body.menu--open .menu {
     padding-top: 20px;
 }
 
-
+ .trusted-customers {
+    text-align: center;
+    margin-top: 20px;
 
 
 
@@ -1367,4 +1378,4 @@ body.menu--open .menu {
 .nav-button {
   width: 44px;
   height: 44px;
-}
+}                            
