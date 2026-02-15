@@ -13,7 +13,7 @@ body {
     color: #243e63;
 }
 
-img {
+img,.hero-image {
     max-width: 100%;
     height: auto;
 }
@@ -297,7 +297,7 @@ body.menu--open .menu {
 .hero-section {
     display: flex;
     align-items: center;
-    padding: 4rem 5%;
+    padding: 96% 0%;
     max-width: 1200px;
     margin: 0 auto;
     gap: 60px;
@@ -337,7 +337,8 @@ body.menu--open .menu {
 
 .hero-image img {
     width: 100%;
-    max-width: 750px;
+    max-width: 1200px;
+    height: auto;
 }
 
 /* ========================================
@@ -486,6 +487,7 @@ body.menu--open .menu {
     margin: 0 auto;
     padding: 80px 20px;
     gap: 60px;
+    text-align: center;
 }
 
 .steps-section {
@@ -498,7 +500,7 @@ body.menu--open .menu {
 
 .section-content {
     flex: 1;
-    text-align: left;
+    text-align: center;
 }
 
 .section-content h2 {
@@ -699,11 +701,11 @@ body.menu--open .menu {
 .pricing-cards {
     display: flex;
     justify-content: center;
-    align-items: stretch;
     gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
+
 }
 
 .price-card {
@@ -719,7 +721,7 @@ body.menu--open .menu {
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     max-width: 300px;
-    margin: Ø auto;
+    margin: 0 auto;
 }
 
 
@@ -1151,8 +1153,11 @@ body.menu--open .menu {
         max-width: 600px;
     }
 
+
+
     .pricing-cards {
         flex-direction: column;
+        align-items: center;
     }
 
     .price-card.featured {
@@ -1185,8 +1190,31 @@ body.menu--open .menu {
         font-size: 2.2rem;
     }
 
+   .section-label-h5  {
+        padding: 0 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+
+
+
 /* Mobile: stack testimonial footer so avatar/name sit above the arrows */
-.testimonials-section { flex-direction: column; }
+
+
+
+
+
+
+
+
+.testimonials-section {
+  flex-direction: column;
+  gap: 40px;
+  display: flex
+  justify-content: center;
+}
 
 .testimonial-footer {
   display: flex;
@@ -1243,9 +1271,7 @@ body.menu--open .menu {
         margin-top: 15px;
     }
 
-    .pricing-cards {
-        gap: 20px;
-    }
+
 
     .cta-text h2 {
         font-size: 1.8rem;
@@ -1308,7 +1334,7 @@ body.menu--open .menu {
  .trusted-customers {
     text-align: center;
     margin-top: 20px;
-
+ }
 
 
 /* Basic Navbar Styling */
